@@ -1,0 +1,156 @@
+/* Existing animation classes (add these if not already present) */
+@keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInRightDelayed {
+    0%, 20% {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInTop {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInBottom {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes bounceIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.3);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+    70% {
+      transform: scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .animate-slide-in-left {
+    animation: slideInLeft 0.8s ease-out;
+  }
+  
+  .animate-slide-in-right {
+    animation: slideInRight 0.8s ease-out;
+  }
+  
+  .animate-slide-in-right-delayed {
+    animation: slideInRightDelayed 1.2s ease-out;
+  }
+  
+  .animate-fade-in-top {
+    animation: fadeInTop 0.6s ease-out;
+  }
+  
+  .animate-fade-in-bottom {
+    animation: fadeInBottom 0.8s ease-out;
+  }
+  
+  .animate-bounce-in {
+    animation: bounceIn 1s ease-out;
+  }
+  
+  /* Vision Cards Hover Animation */
+  .vision-card {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  /* Default state - white background with colored text and border */
+  .volunteer-card {
+    background-color: white !important;
+    color: #10b981; /* green-500 */
+    border-color: #10b981;
+  }
+  
+  .contact-card {
+    background-color: white !important;
+    color: #3b82f6; /* blue-500 */
+    border-color: #3b82f6;
+  }
+  
+  /* Overlay that slides down from top */
+  .vision-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-100%);
+    transition: transform 0.6s ease-in-out;
+    z-index: 5;
+    border-radius: 1.5rem; /* Match the card's rounded corners */
+  }
+  
+  /* When hovering, slide the colored overlay down */
+  .vision-card:hover .vision-overlay {
+    transform: translateY(0);
+  }
+  
+  /* Text color change on hover with higher specificity */
+  .volunteer-card:hover .relative.z-10 {
+    color: white !important;
+  }
+  
+  .contact-card:hover .relative.z-10 {
+    color: white !important;
+  }
+  
+  /* Subtle lift effect on hover */
+  .vision-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Ensure text stays on top with higher z-index */
+  .vision-card .relative.z-10 {
+    position: relative;
+    z-index: 10;
+  }
