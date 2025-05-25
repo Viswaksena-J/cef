@@ -13,20 +13,18 @@
     "@radix-ui/react-navigation-menu": "^1.2.13",
     "classnames": "^2.5.1",
     "embla-carousel-react": "^8.6.0",
+    "framer-motion": "^12.12.2",
+    "lucide-react": "^0.511.0",
     "next": "15.3.2",
     "radix-ui": "^1.4.2",
-    "lucide-react": "^0.511.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
-    
   },
   "devDependencies": {
-   
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "15.3.2",
     "tailwindcss": "^4"
-  
   }
 }
