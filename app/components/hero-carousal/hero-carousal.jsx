@@ -34,7 +34,7 @@ export const HeroCarousal = ({ slides }) => {
     }, [emblaApi, onSelect]);
 
     return (
-        <div className="relative overflow-hidden w-full h-[800px]">
+        <div className="relative overflow-hidden w-full h-[calc(100vh-10rem)]">
             <div className="embla" ref={emblaRef}>
                 <div className="embla__container">
                     {slides.map((slide, index) => (
