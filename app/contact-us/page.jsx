@@ -4,10 +4,10 @@ import { ContactUsWrapper } from './components';
 export default function ContactUs() {
     return (
         <div>
-            <Hero />
+            {/* <Hero />
             <Location />
             <ContactUsWrapper />
-            <MapView />
+            <MapView /> */}
         </div>
     )
 }
