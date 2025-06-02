@@ -5,9 +5,9 @@ export default function ContactUs() {
     return (
         <div>
             <Hero />
-            {/* <Location />
-            <ContactUsWrapper />
-            <MapView /> */}
+            {/* <Location /> */}
+            {/* <ContactUsWrapper /> */}
+            {/* <MapView /> */}
         </div>
     )
 }
