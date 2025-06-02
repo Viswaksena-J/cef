@@ -1,10 +1,10 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 
-export default function PaymentSuccess() {
+function PaymentSuccessComponent() {
     const searchParams = useSearchParams();
     const [paymentStatus, setPaymentStatus] = useState('verifying');
     const [orderDetails, setOrderDetails] = useState(null);
@@ -201,10 +201,10 @@ export default function PaymentSuccess() {
                     Try Again
                 </button>
                 <Link
-                    href="/donate"
+                    href="/"
                     className="w-full bg-gray-600 text-white py-3 px-4 rounded-md hover:bg-gray-700 transition-colors inline-block"
                 >
-                    Back to Donate
+                    Go to Home
                 </Link>
             </div>
         </div>
@@ -226,10 +226,36 @@ export default function PaymentSuccess() {
     };
 
     return (
-        <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-            <div className="max-w-md w-full bg-white shadow-lg rounded-lg p-8">
+        <div className="min-h-screen bg-gray-50 py-12">
+            <div className="max-w-md mx-auto bg-white shadow-lg rounded-lg p-8">
                 {renderContent()}
             </div>
         </div>
+    );
+}
+
+function PaymentSuccessFallback() {
+    return (
+        <div className="min-h-screen bg-gray-50 py-12">
+            <div className="max-w-md mx-auto bg-white shadow-lg rounded-lg p-8">
+                <div className="text-center">
+                    <div className="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 mb-6">
+                        <div className="animate-spin rounded-full h-8 w-8 border-2 border-blue-600 border-t-transparent"></div>
+                    </div>
+                    <h2 className="text-2xl font-bold text-gray-900 mb-4">Loading Payment Status</h2>
+                    <p className="text-gray-600">
+                        Please wait while we load your payment information...
+                    </p>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+export default function PaymentSuccess() {
+    return (
+        <Suspense fallback={<PaymentSuccessFallback />}>
+            <PaymentSuccessComponent />
+        </Suspense>
     );
 } 

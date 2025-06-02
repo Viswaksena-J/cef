@@ -1,9 +1,9 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 
-export default function Payment() {
+function PaymentComponent() {
     const searchParams = useSearchParams();
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState('');
@@ -107,5 +107,31 @@ export default function Payment() {
                 </div>
             </div>
         </div>
+    );
+}
+
+function PaymentFallback() {
+    return (
+        <div className="min-h-screen flex items-center justify-center bg-gray-50">
+            <div className="max-w-md w-full bg-white shadow-lg rounded-lg p-6">
+                <div className="text-center">
+                    <div className="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 mb-4">
+                        <div className="animate-spin rounded-full h-6 w-6 border-2 border-blue-600 border-t-transparent"></div>
+                    </div>
+                    <h3 className="text-lg font-medium text-gray-900 mb-2">Loading Payment</h3>
+                    <p className="text-sm text-gray-500">
+                        Initializing payment gateway...
+                    </p>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+export default function Payment() {
+    return (
+        <Suspense fallback={<PaymentFallback />}>
+            <PaymentComponent />
+        </Suspense>
     );
 } 
