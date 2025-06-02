@@ -1,3 +1,4 @@
+// This is a server component - no 'use client' directive
 export const ContactUsForm = ({ 
     formData, 
     errors, 
