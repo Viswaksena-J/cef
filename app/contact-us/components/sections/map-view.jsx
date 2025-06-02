@@ -11,7 +11,7 @@ export const MapView = () => {
                     </h2>
                 </div>
 
-                <MapViewWrapper />
+                {/* <MapViewWrapper /> */}
             </div>
         </div>
     );

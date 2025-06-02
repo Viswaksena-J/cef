@@ -44,6 +44,9 @@ export const MapViewWrapper = () => {
     };
 
     useEffect(() => {
+        // Only run on client side
+        if (typeof document === 'undefined') return;
+        
         // Add custom CSS for the map styling
         const style = document.createElement('style');
         style.textContent = `
@@ -74,7 +77,9 @@ export const MapViewWrapper = () => {
         document.head.appendChild(style);
 
         return () => {
-            document.head.removeChild(style);
+            if (typeof document !== 'undefined') {
+                document.head.removeChild(style);
+            }
         };
     }, []);
 
