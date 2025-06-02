@@ -51,14 +51,6 @@ export const Header = () => {
 						
 						<NavigationMenuItem>
 							<NavigationMenuLink asChild>
-								<Link href="/volunteer" className="text-base font-medium text-gray-800 hover:text-blue-600">
-									VOLUNTEER
-								</Link>
-							</NavigationMenuLink>
-						</NavigationMenuItem>
-						
-						<NavigationMenuItem>
-							<NavigationMenuLink asChild>
 								<Link href="/contact-us" className="text-base font-medium text-gray-800 hover:text-blue-600">
 									CONTACT US
 								</Link>

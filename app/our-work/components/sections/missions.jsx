@@ -9,12 +9,12 @@ export const Missions = () => {
             </div>
 
             {/* Mission Section */}
-            <div className="max-w-7xl mx-auto px-4 mb-8">
+            <div className="max-w-7xl mx-auto px-4">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 shadow-lg">
                     {/* Food Distribution Image */}
                     <div className="relative h-96 lg:h-auto">
                         <img 
-                            src="/api/placeholder/600/400" 
+                            src="/mission-1.webp" 
                             alt="Community food distribution"
                             className="w-full h-full object-cover"
                         />
@@ -96,7 +96,7 @@ export const Missions = () => {
                     {/* Children Education Image */}
                     <div className="relative h-96 lg:h-auto">
                         <img 
-                            src="/api/placeholder/600/400" 
+                            src="/depositphotos_56835989-stock-photo-indian-kids-in-the-jaisalmer.webp" 
                             alt="Children in education program"
                             className="w-full h-full object-cover"
                         />
