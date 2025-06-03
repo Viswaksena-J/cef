@@ -37,6 +37,12 @@ export async function POST(request) {
                 return_url: `${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/payment/success?order_id=${orderId}&amount=${amount}`,
             },
             order_note: "Donation payment",
+            order_tags: {
+                payment_methods: "cc,dc,upi,nb,wallet", // Enable all payment methods including UPI
+                upi_intent: "enabled", // Enable UPI app redirects
+                upi_collect: "enabled", // Enable UPI ID collection
+                upi_qr: "enabled" // Enable UPI QR codes
+            }
         };
 
         console.log("🚀 Creating order with request:", JSON.stringify(orderRequest, null, 2));

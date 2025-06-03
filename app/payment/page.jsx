@@ -53,7 +53,25 @@ function PaymentComponent() {
                 // Open Cashfree checkout
                 const checkoutOptions = {
                     paymentSessionId: sessionId,
-                    redirectTarget: "_self"
+                    redirectTarget: "_self",
+                    paymentMethods: {
+                        upi: {
+                            enabled: true,
+                            priority: 1 // Make UPI the top priority
+                        },
+                        card: {
+                            enabled: true,
+                            priority: 2
+                        },
+                        netbanking: {
+                            enabled: true,
+                            priority: 3
+                        },
+                        wallet: {
+                            enabled: true,
+                            priority: 4
+                        }
+                    }
                 };
 
                 // This will redirect to Cashfree hosted page
