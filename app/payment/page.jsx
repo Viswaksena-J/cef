@@ -47,7 +47,7 @@ function PaymentComponent() {
                 
                 // Initialize Cashfree
                 const cashfree = CashfreeSDK({
-                    mode: "sandbox" // Change to "production" for live
+                    mode: "production" // Changed from "sandbox" to "production"
                 });
 
                 // Open Cashfree checkout

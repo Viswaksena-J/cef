@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 
 // Initialize Cashfree
 const cashfree = new Cashfree(
-    CFEnvironment.SANDBOX, // Change to PRODUCTION when going live
+    CFEnvironment.PRODUCTION, // Changed from SANDBOX to PRODUCTION
     process.env.CASHFREE_CLIENT_ID || "TEST_CLIENT_ID",
     process.env.CASHFREE_CLIENT_SECRET || "TEST_CLIENT_SECRET"
 );
