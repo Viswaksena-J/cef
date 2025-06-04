@@ -1,18 +1,17 @@
 import { HeroCarousal } from "../hero-carousal";
 
 export const Hero = () => {
-    // Define slide data here as it's static content
     const slides = [
         {
-            text: "Charity is a continuous process toward success and happiness.",
-            imageSrc: "/carousel-1.jpg"
+            text: "Food. Education. Dignity.",
+            imageSrc: "/home-hero-caurosal.jpeg"
         },
         {
-            text: "Help us make a difference in the lives of those in need.",
+            text: "For every hungry child, a chance to learn.",
             imageSrc: "/carousel-2.jpg"
         },
         {
-            text: "Together we can create a better world for everyone.",
+            text: "Help a child rise — with meals and books",
             imageSrc: "/carousel-3.jpg"
         }
     ];

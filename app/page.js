@@ -6,7 +6,7 @@ export default function Home() {
       <Hero />
       <About />
       <Causes />
-      {/* <CTA /> */}
+      <CTA />
       <Services />
       <CaseStudy />
       <GreyCTA />

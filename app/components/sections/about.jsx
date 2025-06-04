@@ -4,24 +4,21 @@ export const About = () => {
             <div className="flex flex-col md:flex-row items-center justify-between py-16 px-8 md:px-16 container mx-auto">
                 <div className="w-full md:w-1/2 mb-10 md:mb-0 pr-0 md:pr-10">
                     <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-                        Welcome To The CEF International
+                        Welcome to Children's Hope Foundation
                     </h1>
                     <p className="text-gray-700 mb-6">
-                        We the social service society are a team that is pledged to work towards the 
-                        betterment of children. We are a non-profit voluntary organization whose 
-                        aim is to give a bright and healthy future to our future generation. We are a 
-                        secular family which works together to provide facilities such as food, books, 
-                        and health checkups to the children can right and shine.
+                        We are dedicated to bringing hope, care, and opportunities to underprivileged children—especially the girl child. Our mission is to ensure that every child, regardless of their background, has access to food, education, hygiene, and a brighter future.We work tirelessly to support:
                     </p>
                     <p className="text-gray-700 mb-8">
-                        We all have witnessed the ordeal daily wage workers have undergone during 
-                        a covid crisis. With less income before and with no income after lockdown, 
-                        they are not able to have at least each meal in a day. So we are drawing up a 
-                        response strategy for distributing doorstep ration kits to these families.
+                        - Girl child education and empowerment<br/>
+                        - Nutritious meals for children in need<br/>
+                        - Clean hygiene practices and awareness<br/>
+                        - Education and welfare for orphans and poor children<br/>
                     </p>
-                    <button className="bg-green-500 hover:bg-green-600 text-white font-medium py-3 px-8 rounded-full transition duration-300">
-                        KNOW MORE
-                    </button>
+                    <p className="text-gray-700 mb-6">
+                        Our goal is to build a society where every child has the chance to grow, learn, and dream without limitations. Through community-driven efforts and generous support, we strive to make a lasting impact on children's lives, empowering them to reach their full potential.
+                    </p>
+                    <p className="text-[#4986E8] text-3xl font-bold mb-6">one step at a time.</p>
                 </div>
                 <div className="w-full md:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-6">
                     {/* Donations Card */}

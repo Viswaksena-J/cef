@@ -13,20 +13,20 @@ export const BottomCTA = () => (
   <section className="w-full bg-[#21232e] py-20">
     <div className="container mx-auto px-4">
       <div className="flex flex-col md:flex-row justify-around items-center gap-10 md:gap-4">
-        <Suspense fallback={<StaticNumber value={23000} text="Families get helped" />}>
-          <StatisticsWrapper value={23000} text="Families get helped" />
+        <Suspense fallback={<StaticNumber value={12200} text="Families get helped" />}>
+          <StatisticsWrapper value={12200} text="Families get helped" />
         </Suspense>
         
         <div className="hidden md:block w-px h-20 bg-gray-700"></div>
         
-        <Suspense fallback={<StaticNumber value={17000} text="Scholarship to Students" />}>
-          <StatisticsWrapper value={17000} text="Scholarship to Students" />
+        <Suspense fallback={<StaticNumber value={9800} text="Scholarship to Students" />}>
+          <StatisticsWrapper value={9800} text="Scholarship to Students" />
         </Suspense>
         
         <div className="hidden md:block w-px h-20 bg-gray-700"></div>
         
-        <Suspense fallback={<StaticNumber value={485000} text="Donations" />}>
-          <StatisticsWrapper value={485000} text="Donations" />
+        <Suspense fallback={<StaticNumber value={92350} text="Donations" />}>
+          <StatisticsWrapper value={92350} text="Donations" />
         </Suspense>
       </div>
       

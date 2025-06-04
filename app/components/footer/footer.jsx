@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { Facebook, Twitter, Instagram, Linkedin, MapPin, Phone, Mail } from 'lucide-react';
 
 export function Footer() {
@@ -8,15 +9,19 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo and Company Info */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-3">
-              <img 
-                src="./cef.webp" 
-                alt="CEF Logo" 
-                className="w-40 h-25 object-contain"
+            <div className="flex items-center gap-4">
+              <Image 
+                src="/chf-logo.png" 
+                alt="CEF International"
+                width={240}
+                height={100}
+                priority
+                className="h-14 w-auto"
               />
-            </div>
-            <div className="text-blue-400 font-bold text-base">
-              CHILDREN EDUCARE FOUNDATION
+              <div className="flex flex-col text-left">
+                <p className="text-2xl font-bold text-[#1B5775]">CH FOUNDATION</p>
+                <p className="text-sm text-[#648823]">CHILDREN'S HOPE FOUNDATION</p>
+              </div>
             </div>
             <div className="text-gray-300 text-base">
               A not-for-profit Section 8 Company.
@@ -44,22 +49,22 @@ export function Footer() {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 mt-1 text-gray-400 flex-shrink-0" />
                 <div>
-                  4WS8B, 4th floor West Block,
+                  103, 2nd Main Rd,
                   <br />
-                  Mani Casadona, Action area 2,
+                  Isha Casablanca Mariyappa Layout,
                   <br />
-                  New town, Rajarhat, Kolkata -
+                  Kadubeesanahalli, Panathur,
                   <br />
-                  7000156
+                  Bengaluru, Karnataka 560103
                 </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-gray-400" />
-                <span>+91 3348228501</span>
+                <span>+91 3241657780</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-gray-400" />
-                <span>info@cefinternational.org</span>
+                <span>childrenshopefoundation0@gmail.com</span>
               </div>
             </div>
           </div>

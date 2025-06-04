@@ -12,15 +12,19 @@ export const Header = () => {
 	return (
 		<header className="sticky top-0 w-full bg-white z-50 shadow-sm">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
-				<Link href="/" className="flex-shrink-0">
+				<Link href="/" className="flex-shrink-0 flex items-center gap-4">
 					<Image 
-						src="/cef-international.webp" 
+						src="/chf-logo.png" 
 						alt="CEF International"
 						width={240}
-						height={50}
+						height={100}
 						priority
-						className="h-12 w-auto"
+						className="h-14 w-auto"
 					/>
+					<div className="flex flex-col text-left">
+						<p className="text-2xl font-bold text-[#1B5775]">CH FOUNDATION</p>
+						<p className="text-sm text-[#648823]">CHILDREN'S HOPE FOUNDATION</p>
+					</div>
 				</Link>
 				
 				<NavigationMenu className="hidden md:block">

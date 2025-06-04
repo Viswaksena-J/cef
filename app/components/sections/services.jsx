@@ -20,11 +20,7 @@ export const Services = () => (
         </div>
         <h3 className="text-2xl font-bold mb-4">Social Development</h3>
         <p className="text-gray-700">
-          People in Africa, Philistine, afghanistan, Livia and 
-          many other countries are not getting the proper 
-          medical treatment. So we have open a slogan 
-          and a project called "people will not suffer for 
-          medical treatment
+          Many people in India still struggle to access proper medical care. To help solve this, we’ve launched a campaign and project called “No One Should Suffer Without Medical Help.”
         </p>
       </div>
 
@@ -42,11 +38,7 @@ export const Services = () => (
         </div>
         <h3 className="text-2xl font-bold mb-4">Healths & Rights</h3>
         <p className="text-gray-700">
-          In today's world we know that many people do 
-          not get their food daily. It is very difficult for us 
-          in today's world that people do not get their 
-          food. So we opened a project called "No people 
-          will die without eating"
+          In today’s world, it’s heartbreaking that some people still sleep hungry. To fight this issue, we started a project called “No One Will Die Hungry.”
         </p>
       </div>
 
@@ -64,11 +56,7 @@ export const Services = () => (
         </div>
         <h3 className="text-2xl font-bold mb-4">Education</h3>
         <p className="text-gray-700">
-          Education is the backbone of a nation. But many 
-          children do not get a chance to go to school due 
-          to their poverty. So we are raising funds for a 
-          project called education for everyone and every 
-          child will go to school.
+          Education is the backbone of any nation. But due to poverty, many children in India cannot attend school. That’s why we’ve started a campaign called “Education for Every Child.”
         </p>
       </div>
     </div>
