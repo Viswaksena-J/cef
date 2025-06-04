@@ -25,10 +25,10 @@ export const Hero = () => {
                 </h1>
             </div>
         </div>
-        <div className='bg-gray-100 py-16'>
-            <div className='text-center text-[rgb(42, 42, 42)] max-w-7xl mx-auto px-4'>
-                <p className="text-base md:text-lg mb-8">
-                    Sustainable development across the world has become the definition and one of the motives of any brand. As Bill Ford put it right “ Creating a strong business and building a better world are not conflicting goals. They are both essential ingredients for long-term success”. Corporate Social Responsibility is a means to achieve long-term success, competitiveness, and sustainability. CSR initiatives act as catalysts for corporate to build a dominant brand along with key stakeholders—customers, employees, government, and the public. CEF has always worked as an ally with a group of corporate professionals in the mission to bring sustainable change across the globe. We have partnered with Iscon Eighteesh brands to work together for the betterment and upliftment of society. Let’s come together and create a mark and let the smile of these children shine the world.
+        <div className='bg-gray-100 py-20'>
+            <div className='text-center text-[rgb(42, 42, 42)] max-w-6xl mx-auto px-6'>
+                <p className="text-lg md:text-xl leading-relaxed mb-8 font-light">
+                    Sustainable development across the world has become a defining goal and a key focus for every brand. As Bill Ford rightly said, "Creating a strong business and building a better world are not conflicting goals. They are both essential ingredients for long-term success." Corporate Social Responsibility (CSR) is a powerful way to achieve long-term success, competitiveness, and sustainability. CSR initiatives act as catalysts for corporations to build a strong brand alongside key stakeholders—customers, employees, government, and the public. CH Foundation has always stood as a trusted partner with corporate professionals on a mission to bring sustainable change across communities. We have partnered with Iscon Eighteesh brands to collaborate for the betterment and upliftment of society. Let's join hands to create a lasting impact and let the smiles of these children brighten the world.
                 </p>
             </div>
         </div>
