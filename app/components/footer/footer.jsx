@@ -63,7 +63,7 @@ export function Footer() {
                 <span>+91 3241657780</span>
               </div>
               <div className="flex items-center space-x-3">
-                <Mail className="w-5 h-5 text-gray-400" />
+                <Mail className="w-5 h-5 text-gray-400 flex-shrink-0" strokeWidth={1.5} />
                 <span>childrenshopefoundation0@gmail.com</span>
               </div>
             </div>

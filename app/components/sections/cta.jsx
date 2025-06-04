@@ -65,23 +65,10 @@ export const CTA = () => (
             <div className="aspect-video bg-gray-800 flex items-center justify-center relative group">
               <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-green-600/20"></div>
               
-              {/* Play Button Overlay */}
-              <button className="relative z-10 w-20 h-20 bg-white/90 hover:bg-white rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-300 shadow-lg">
-                <svg className="w-8 h-8 text-blue-600 ml-1" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M8 5v14l11-7z"/>
-                </svg>
-              </button>
               
               {/* Video Placeholder */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center text-white/80">
-                  <div className="w-16 h-16 mx-auto mb-4 bg-white/10 rounded-full flex items-center justify-center">
-                    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                    </svg>
-                  </div>
-                  <p className="text-sm font-medium">Watch Our Impact Story</p>
-                </div>
+                <img src="/our-reach.jpg" alt="CTA Video" className="w-full h-full object-cover" />
               </div>
             </div>
             

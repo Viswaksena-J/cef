@@ -9,21 +9,21 @@ export const Causes = () => (
       <div className="relative grid grid-cols-1 md:grid-cols-3 gap-8">
         {[
           {
-            image: "/mid-day-meal.jpeg",
+            image: "/mid-day-meal-v2.jpeg",
             alt: "Mid Day Meal Distribution",
             title: "Mid Day Meal Distribution Campaign",
             description: "The mid-day meal program is not just about food. It’s about education, it’s about hunger, it’s about poverty, it’s about childhood.” – Shashi Tharoor",
             link: "/mid-day-meal-distribution-campaign"
           },
           {
-            image: "/mid-day-meal.jpeg",
+            image: "/support-underprvilaged.jpg",
             alt: "Education Support",
             title: "Supporting Under Privileged Children For Education And Food",
             description: "There is a section of society that struggles to meet even the most basic needs like food and education. To survive, they are forced to send their children to work, just to have one meal a day.",
             link: "/support-children-education-food"
           },
           {
-            image: "/mid-day-meal.jpeg",
+            image: "/promoting-the-rights-v2.jpeg",
             alt: "Girl Child Rights",
             title: "Promoting The Rights Of Girl Child",
             description: "Right to live, right to speak, and right to education—these are basic rights, yet many girls are still denied them in various parts of society.",

@@ -49,7 +49,7 @@ export const HeroCarousal = ({ slides }) => {
                                         src={slide.imageSrc}
                                         alt="Hero background"
                                         fill
-                                        className="object-cover"
+                                        // className="object-fill"
                                     />
                                     
                                     {/* Dark blue overlay */}

@@ -13,7 +13,7 @@ export const Location = () => {
                 {/* Kolkata Button */}
                 <div className="flex justify-center mb-12">
                     <button className="bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-full font-semibold text-lg transition-colors duration-300">
-                        Kolkata
+                        Bangalore
                     </button>
                 </div>
                 
@@ -33,7 +33,7 @@ export const Location = () => {
                             OUR OFFICE
                         </h3>
                         <p className="text-gray-600 leading-relaxed">
-                            4W58B, 4th Floor West Block, Mani Casadona, Action Area 2, New Town, Rajarhat, Kolkata – 7000156
+                            103, 2nd Main Rd, Isha Casablanca Mariyappa Layout, Kadubeesanahalli, Panathur, Bengaluru, Karnataka 560103 
                         </p>
                     </div>
                     
@@ -51,7 +51,7 @@ export const Location = () => {
                             PHONE NUMBER
                         </h3>
                         <p className="text-gray-600 text-lg">
-                            +91 3348228501
+                            +91 3241657780
                         </p>
                     </div>
                     
