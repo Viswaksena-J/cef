@@ -107,7 +107,7 @@ export default function AboutUs() {
                         {/* Left Image - Slide in from left */}
                         <div className="flex justify-center lg:justify-start">
                             <Image
-                                src="/beg.jpeg" 
+                                src="/IMG_20250607_004257.png" 
                                 alt="Volunteer helping children" 
                                 className="max-w-full h-auto rounded-lg shadow-lg animate-slide-in-left"
                                 width={500}

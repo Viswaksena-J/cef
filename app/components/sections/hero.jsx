@@ -4,7 +4,7 @@ export const Hero = () => {
     const slides = [
         {
             text: "Food. Education. Dignity.",
-            imageSrc: "/front-page.jpeg"
+            imageSrc: "/gettyimages-509299878-612x612.jpg"
         },
         {
             text: "For every hungry child, a chance to learn.",
