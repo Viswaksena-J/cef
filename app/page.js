@@ -10,7 +10,7 @@ export default function Home() {
       <Services />
       <CaseStudy />
       <GreyCTA />
-      <Articles />
+      {/* <Articles /> */}
       <BottomCTA />
     </>
   );

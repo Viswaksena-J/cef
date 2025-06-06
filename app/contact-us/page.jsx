@@ -7,7 +7,7 @@ export default function ContactUs() {
             <Hero />
             <Location />
             <ContactUsWrapper />
-            <MapView />
+            {/* <MapView /> */}
         </div>
     )
 }
