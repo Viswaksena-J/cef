@@ -39,7 +39,7 @@ export default function AboutUs() {
                         <h2 className="text-green-500 text-4xl font-semibold mb-4">ABOUT US</h2>
                     </div>
                     
-                    <div className="grid lg:grid-cols-2 gap-12 items-start">
+                    <div className="grid lg:grid-cols-2 gap-12 items-center">
                         {/* Left Content */}
                         <div className="space-y-8">
                             <h3 className="text-3xl md:text-4xl font-bold text-gray-800 leading-tight text-center">
@@ -139,7 +139,7 @@ export default function AboutUs() {
                             {/* Designation - Slide in from right with delay */}
                             <div className="text-right animate-slide-in-right-delayed">
                                 <p className="text-blue-500 font-semibold text-lg">Mr. Mohit – Volunteer</p>
-                                <p className="text-blue-600 font-medium">CHF International</p>
+                                <p className="text-blue-600 font-medium">CH Foundation</p>
                             </div>
                             
                             {/* Support button - Bounce in */}

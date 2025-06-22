@@ -98,16 +98,16 @@ export function Footer() {
 
         {/* Social Media Icons */}
         <div className="flex justify-center space-x-4 mt-8 mb-8">
-          <a href="#" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors">
+          <a href="https://www.facebook.com/share/1HfF1ZfJmR/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors">
             <Facebook className="w-5 h-5" />
           </a>
-          <a href="#" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-400 transition-colors">
+          <a href="https://x.com/Ya39522241Rohit?t=FbvA1uPGd3rQXpxZ_s2N-A&s=08" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-400 transition-colors">
             <Twitter className="w-5 h-5" />
           </a>
-          <a href="#" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-pink-600 transition-colors">
+          <a href="https://www.instagram.com/chfoundationindia?igsh=MTk2M3RvdHhkZnExbA==" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-pink-600 transition-colors">
             <Instagram className="w-5 h-5" />
           </a>
-          <a href="#" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors">
+          <a href="https://linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=children-hope-foundation-99793636a" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors">
             <Linkedin className="w-5 h-5" />
           </a>
         </div>
