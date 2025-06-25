@@ -32,7 +32,7 @@ export const BottomCTA = () => (
       
       <div className="flex justify-center mt-16">
         <a 
-          href="https://www.instagram.com/" 
+          href="https://www.instagram.com/chfoundationindia?igsh=MTk2M3RvdHhkZnExbA==" 
           target="_blank" 
           rel="noopener noreferrer"
           className="inline-flex items-center px-6 py-3 bg-[#0077B5] text-white font-medium rounded-full hover:bg-[#005885] transition-colors"
