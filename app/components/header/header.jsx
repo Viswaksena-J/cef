@@ -105,19 +105,19 @@ export const Header = () => {
 				<div className="md:hidden fixed inset-0 z-50 bg-white overflow-y-auto">
 					<div className="flex flex-col h-full">
 						<div className="flex items-center justify-between px-4 py-4 border-b border-gray-200">
-							<div className="flex items-center gap-2">
+							<Link href="/" className="flex items-center gap-2" onClick={() => setMobileMenuOpen(false)}>
 								<Image 
 									src="/chf-logo.png" 
 									alt="CEF International"
-									width={120}
-									height={50}
+									width={240}
+									height={100}
 									className="h-10 w-auto"
 								/>
-								<div>
+								<div className="flex flex-col text-left">
 									<p className="text-lg font-bold text-[#1B5775]">CH FOUNDATION</p>
 									<p className="text-xs text-[#648823]">CHILDREN'S HOPE FOUNDATION</p>
 								</div>
-							</div>
+							</Link>
 							<button 
 								className="p-2 focus:outline-none" 
 								onClick={toggleMobileMenu}

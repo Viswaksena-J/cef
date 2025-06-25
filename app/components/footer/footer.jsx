@@ -64,7 +64,7 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-gray-400 flex-shrink-0" strokeWidth={1.5} />
-                <span>childrenshopefoundation0@gmail.com</span>
+                <span>info@chfoundations.in</span>
               </div>
             </div>
           </div>
@@ -116,7 +116,7 @@ export function Footer() {
         <div className="border-t border-gray-600 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center text-gray-400 text-base">
             <div className="font-medium">
-              © 2022 CEF International. All rights reserved. Designed By SSAMS
+              © 2025 CH Foundation. All rights reserved. Designed By SSAMS
             </div>
             <div className="flex space-x-8 mt-4 md:mt-0 font-medium">
               <a href="#" className="hover:text-white transition-colors">TERMS OF SERVICE</a>

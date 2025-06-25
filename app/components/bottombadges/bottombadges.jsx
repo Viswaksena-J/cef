@@ -1,33 +1,69 @@
+"use client"
+
 import React from 'react';
 
  export const BottomBadges = () => {
   return (
     <div className="relative">
-      {/* Wave Background Container - Top Section */}
-      <div className="w-full h-24 bg-gradient-to-r from-gray-100 via-gray-50 to-gray-100 relative overflow-hidden">
-        {/* Wave Pattern SVG */}
-        <svg 
-          className="absolute top-0 w-full h-full" 
-          viewBox="0 0 1200 100" 
+      <div className="w-full h-32 relative overflow-hidden">
+        <svg
+          className="absolute bottom-0 w-full h-full animate-pulse"
+          viewBox="0 0 1200 120"
           preserveAspectRatio="none"
+          style={{ animationDuration: "4s" }}
         >
-          
-          {/* Third wave layer */}
-          <path 
-            d="M0,50 C200,85 500,25 800,60 C950,70 1050,40 1200,60 L1200,100 L0,100 Z" 
-            fill="rgba(82, 78, 90, 0.04)"
+          <path
+            d="M0,60 C300,90 600,30 900,70 C1050,85 1150,45 1200,65 L1200,120 L0,120 Z"
+            fill="rgba(99, 102, 241, 0.1)"
+            className="drop-shadow-sm"
           />
         </svg>
-        
-    
+        <svg
+          className="absolute bottom-0 w-full h-full"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+          style={{
+            animation: "float 6s ease-in-out infinite",
+            animationDelay: "-2s",
+          }}
+        >
+          <path
+            d="M0,80 C200,45 500,95 800,55 C950,35 1100,75 1200,50 L1200,120 L0,120 Z"
+            fill="rgba(139, 92, 246, 0.08)"
+            className="drop-shadow-sm"
+          />
+        </svg>  
+        <svg
+          className="absolute bottom-0 w-full h-full"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+          style={{
+            animation: "float 8s ease-in-out infinite reverse",
+            animationDelay: "-1s",
+          }}
+        >
+          <path
+            d="M0,40 C400,75 700,15 1000,55 C1100,65 1150,35 1200,45 L1200,120 L0,120 Z"
+            fill="rgba(59, 130, 246, 0.06)"
+            className="drop-shadow-sm"
+          />
+        </svg>
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white/20" />
       </div>
+      <style jsx>{`
+        @keyframes float {
+          0%, 100% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(-10px);
+          }
+        }
+      `}</style>
 
-      {/* Content Section - Three statements directly below wave */}
       <div className="bg-gradient-to-r from-gray-100 via-gray-50 to-gray-100 py-8 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            
-            {/* First Icon Box */}
             <div className="flex items-start space-x-4">
               <div className="flex-shrink-0">
                 <div className="w-12 h-12 flex items-center justify-center">
@@ -51,8 +87,6 @@ import React from 'react';
                 </p>
               </div>
             </div>
-
-            {/* Second Icon Box */}
             <div className="flex items-start space-x-4">
               <div className="flex-shrink-0">
                 <div className="w-12 h-12 flex items-center justify-center">
@@ -76,8 +110,6 @@ import React from 'react';
                 </p>
               </div>
             </div>
-
-            {/* Third Icon Box */}
             <div className="flex items-start space-x-4">
               <div className="flex-shrink-0">
                 <div className="w-12 h-12 flex items-center justify-center">
@@ -100,7 +132,6 @@ import React from 'react';
                 </p>
               </div>
             </div>
-
           </div>
         </div>
       </div>

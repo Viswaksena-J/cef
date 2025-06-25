@@ -69,7 +69,7 @@ export const Location = () => {
                             EMAIL ADDRESS
                         </h3>
                         <p className="text-gray-600 text-lg">
-                            info@cefinternational.org
+                            info@chfoundations.in
                         </p>
                     </div>
                 </div>

@@ -90,11 +90,11 @@ export const ContactUsForm = ({
                 </div>
 
                 {/* Disclaimer text */}
-                <div className="text-sm text-gray-600 leading-relaxed max-w-lg">
+                <div className="text-sm text-gray-600 leading-relaxed">
                     <p>
-                        By sharing your details, you agree to receive stories and updates from CEF via 
+                        By sharing your details, you agree to receive stories and updates from CH Foundation via 
                         mobile, Whatsapp, landline, email and post. If you'd like to change this, please 
-                        send us an email on writetous reachusidia@cefinternational.org
+                        send us an email on writetous info@chfoundations.in
                     </p>
                 </div>
 
